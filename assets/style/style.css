@@ -1,0 +1,157 @@
+/* Стили для всех страниц */
+
+/* Минимальная высота контента */
+main{
+    	min-height: 88vh;
+}
+
+/* Анимация заголовков */
+@keyframes titles {
+    	0%{ font-size: 1px; }
+    	100%{ font-size: 64px; }
+}
+
+/* Использование анимации заголовков */
+.title{
+    	font-weight: 300;
+    	text-align: center;
+    	font-size: 64px;
+    	min-height: 100px;
+    	animation: titles 0.5s linear 1;
+}
+
+/* Ширина кнопок */
+.btn{
+    	width: 300px;
+}
+
+/* ширина формы */
+.form{
+    	width: 50%;
+	p{
+        text-align: center;
+    }
+}
+
+/* ширина ошибки */
+.text-danger{
+    	width: 50%;
+}
+
+/* Высота подвала */
+footer{
+    	height: 12vh;
+}
+
+/* Стили для карусели */
+.carousel{
+    .carousel-inner{
+        width: 50%;
+        border-radius: 10%;
+    }
+    .carousel-btn{
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+}
+
+/* Ширина и высота кнопок управления слайдером*/
+.carousel-control-next, .carousel-control-prev{
+    height: 6vh;
+    width: 6vh;
+}
+
+/* Стили для модальных окон*/
+.modal .form{
+    width: 100%;
+    padding: 5%;
+}
+
+/* Стили для панели администратора */
+.nav-btn-and-cards {
+    display: flex;
+    margin-top: 3%;
+    .nav-btn{
+        width: 25%;
+    }
+    .nav-cards{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 390px) {
+
+    /* Стили для всех страниц */
+    main{
+        min-height: 85vh;
+    }
+
+    .form{
+        width: 100%;
+        padding: 5%;
+    }
+
+    .text-danger{
+        width: 100%;
+    }
+
+    .title{
+        font-size: 48px;
+        min-height: 80px;
+    }
+
+    @keyframes titles {
+        0%{ font-size: 1px; }
+        100%{ font-size: 48px; }
+    }
+
+    /* Стили для подвала */
+    footer{
+        text-align: center;
+        min-height: 15vh;
+    }
+
+    /* Стили для карусели */
+    .carousel{
+        .carousel-inner{
+            width: 95%;
+        }
+        .carousel-btn{
+            opacity: 0;
+            height: 60%;
+            width: 25%;
+            margin-bottom: 0;
+            margin-top: auto;
+        }
+    }
+    
+    /* Стили для карточек */
+    .card{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Стили для панели администратора */
+    .admin-title{
+        min-height: 120px;
+    }
+
+    .nav-btn-and-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10%;
+        margin-bottom: 0;
+        .nav-btn{
+            margin-bottom: 5%;
+            width: 80%;
+        }
+        .nav-cards{
+            width: 95%;
+        }
+    }
+}
